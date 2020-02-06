@@ -1,0 +1,16 @@
+<form>
+  <fieldset class="form-group"> 
+    <legend>Add a Link</legend>
+    <div class="form-group">
+  <label for="title">Title</label>
+  <input name="title" placeholder="Enter link title" #newtitle >
+</div>
+<div class="form-group">
+  <label for="link">Link</label>
+  <input name="link" placeholder="Enter URL" #newlink>
+</div>
+  <button (click)="addArticle(newtitle, newlink)">Submit Link</button>
+</fieldset>
+</form>
+
+<app-article></app-article>

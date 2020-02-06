@@ -19,6 +19,9 @@ constructor(){
 }
 
   addArticle(title:HTMLInputElement, link:HTMLInputElement):Boolean{
+    this.articles.push(new Article(title.value, link.value,1));
+    title.value=" ";
+    link.value=" ";
     console.log(`Adding Article Title: ${title.value} and adding Article Link ${link.value} :`);
     return false;
   }
